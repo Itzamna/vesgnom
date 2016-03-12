@@ -1,0 +1,455 @@
+* {
+margin:0;
+padding:0;
+}
+/*Set initial font styles*/
+body {
+	background: #904010;
+	font-family: verdana, Arial, lucida, helvetica, sans-serif;
+	font-size: 75.01%;
+	line-height: 1em;
+	//margin: 0 18% 0 18%;
+}
+/*set font size for all divs,this overrides some body rules*/
+div {
+   font-size: 1em;
+}
+/*img {
+   border: #904010 groove 3px;
+}*/
+table {
+	font-size: 1em;
+	text-align:center;
+	border:#904010 ridge 2px;
+	//width: 90%;
+}
+table#a {
+	border: 0px;
+}
+td{
+	border:#904010 solid 1px;
+}
+tr{
+	border:#904010 solid 1px;
+}
+
+/*
+----------------------------------------------- */
+#container {
+	position: relative;
+	background: #e6a45d;
+	margin: 0px auto;
+	padding: 0px;
+	width: 780px;
+	left: 50%
+    margin-left: -390px
+}
+#linklist {
+	position: absolute;
+	width: 160px;
+	top: 228px;
+	left: 0px;
+            text-align:left;
+}
+/* header
+----------------------------------------------- */
+
+
+#shapka {
+	background: transparent url(../images/vverh_fon.jpg) top right no-repeat;
+	margin: 0px 0 0 -8px;
+	width: 618px;
+	height: 126px;
+	text-align:center;
+	vertical-align:center;
+	display: block;
+}
+#shapka h2{
+	padding-top:50px;
+}
+div#content {
+	margin: 0px 0px 0 162px;
+	width: 602px;
+	left: 0px;
+	background: #faca9b;
+}
+#main{
+	padding-right: 20px;
+	padding-left: 20px; 
+        min-height: 1000px;
+}
+#footer {
+	margin: 0px -8px 0 0px;
+	background: transparent url(../images/vverh_fon_1.jpg) top right no-repeat;
+	height: 126px;
+	text-align: center;
+}
+/*default link styles*/
+a,a:link a:active {
+   text-decoration: underline;
+   background-color: inherit; 
+   color: #004200; 
+}
+a:visited {
+   text-decoration: underline;
+   background-color: inherit;
+  color: #004200;               
+}
+/* remove underline on hover and change color */
+a:hover {
+   text-decoration: none;
+   background-color: #267F26;
+   color: #000;
+}
+
+ /*HEADINGS */
+div#content h1 {
+   font-size: 2em; /* font size for h1 */
+   line-height: 1em;
+   margin: 0;
+   top:center;
+}
+div#content h2 {
+	color: #7B360C; 
+	font-size: 1.5em; 
+	text-align: center; 
+	/*padding-left: 0.5em;
+	padding-bottom: -20px;*/
+    line-height: 1.5em;
+     margin: 30px 0 0 -8px;
+}
+div#content h3 {
+   color: #7B360C; 
+   font-size: 1.3em;
+   line-height: 1.3em;
+   margin: 0 0 0.5em 0;
+   top:center;
+}
+div#content h4 {
+   color: #7B360C; 
+   font-size: 1.2em;
+   line-height: 1.3em;
+   margin: 0 0 0.25em 0;
+    top:center;
+}
+div#content h5 {
+   color: #7B360C; 
+   font-size: 1.1em;
+   line-height: 1.3em;
+   margin: 0 0 0.25em 0;
+    top:center;
+}
+h6 {
+   color: #7B360C; 
+   font-size: 1em;
+   line-height: 1.3em;
+   margin: 0 0 0.25em 0;
+    top:center;
+}
+#name
+{
+   color: #008000; 
+   font-weight: bold;
+   top:center;
+}
+#tituls
+{
+   #ff0000;
+   font-weight: bold;
+   top:center;
+}
+/* END HEADINGS */
+
+/* TEXT */
+p {
+   font-size: 1em;
+   margin: 0 0 1.5em 0; /* some air around p elements */
+   line-height: 1.4em;
+   padding: 0;
+}
+
+blockquote {
+   border-left:1px solid #904010;
+   margin-left: 10px;
+}
+strong, b {
+/* explicit setting for these */
+   font-weight: bold;
+}
+em, i {
+/* explicit setting for these */
+   font-style:italic;
+}
+
+/* Wrapping text in <code> tags. Makes CSS not validate */
+code, pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ font-family: "Courier New", Courier, monospace;
+ font-size: 1em;
+}
+
+pre {
+   border: 1px solid #000;  /* black border for pre blocks */
+   margin: 0 1em 1em 1em;
+   padding: 0.5em;
+   line-height: 1.5em;
+   font-size: 90%;
+}
+
+/* Separating the divs on the template explanation page, with some bottom-border */
+div.templatecode {
+  margin: 0 0 2.5em;
+}
+
+/* END TEXT */
+
+/* LISTS */
+/* lists in content need some margins to look nice */
+div#main ul,
+div#main ol,
+div#main dl {
+   font-size: 1.0em;
+   line-height: 1.4em;
+   margin: 0 0 1.5em 0;
+}
+
+div#main ul li,
+div#main ol li {
+   margin: 0 0 0.25em 3em;
+}
+
+/* definition lists topics on bold */
+div#main dl dt {
+   font-weight: bold;
+   margin: 0 0 0 1em;
+}
+div#main dl dd {
+   margin: 0 0 1em 1em;
+}
+
+div#main dl {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c0c0c0;
+}
+#pageHeader {
+	background: url(../images/head.jpg) top left no-repeat;
+	height: 218px;
+	margin: 0;
+}
+
+#pageHeader h1 {
+	display: none;
+}
+a#rus {
+	display: block;
+            position:relative;
+           left: 762px;
+           bottom: -189px;
+	width: 16px;
+	height: 11px;
+	background: url(../images/ru.gif) no-repeat;
+}
+a#en {	
+           display: block;
+           position:relative;
+           left: 742px;
+           bottom: -200px;
+	width: 16px;
+	height: 11px;
+	background: url(../images/gb.gif) no-repeat;
+}
+
+
+/
+* links
+----------------------------------------------- */
+a#ll1 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/main.jpg) no-repeat;
+}
+a#ll1:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/main1.jpg) no-repeat;
+}
+a#ll2 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/breed.jpg) no-repeat;
+}
+a#ll2:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/breed1.jpg) no-repeat;
+}
+a#ll3 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/standart.jpg) no-repeat;
+}
+a#ll3:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/standart1.jpg) no-repeat;
+}
+a#ll4 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/exhibition.jpg) no-repeat;
+}
+a#ll4:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/exhibition1.jpg) no-repeat;
+}
+a#ll5 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/ourdogs.jpg) no-repeat;
+}
+a#ll5:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/ourdogs1.jpg) no-repeat;
+}
+a#ll6 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/veterans.jpg) no-repeat;
+}
+a#ll6:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/veterans1.jpg) no-repeat;
+}
+a#ll7 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/memory.jpg) no-repeat;
+}
+a#ll7:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/memory1.jpg) no-repeat;
+}
+
+a#ll8 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/puppy.jpg) no-repeat;
+}
+a#ll8:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/puppy1.jpg) no-repeat;
+}
+a#ll9 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/photo.jpg) no-repeat;
+}
+a#ll9:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/photo1.jpg) no-repeat;
+}
+a#ll10 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/forum.jpg) no-repeat;
+}
+a#ll10:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/forum1.jpg) no-repeat;
+}
+a#ll11 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/links.jpg) no-repeat;
+}
+a#ll11:hover  {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/links1.jpg) no-repeat;
+}
+
+a#ll12 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/kontacts.jpg) no-repeat;
+}
+a#ll12:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/kontacts1.jpg) no-repeat;
+}
+a#ll13 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/mainrus.jpg) no-repeat;
+}
+a#ll13:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/mainrus1.jpg) no-repeat;
+}
+a#ll20 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/guest.jpg) no-repeat;
+}
+a#ll20:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/guest1.jpg) no-repeat;
+}
+a#ll22 {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/about.jpg) no-repeat;
+}
+a#ll22:hover {
+	display: block;
+	width: 151px;
+	height: 42px;
+	background: url(../images/about1.jpg) no-repeat;
+}
+a span{
+	display: none;
+}

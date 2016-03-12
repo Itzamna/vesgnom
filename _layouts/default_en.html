@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8">
+    {% include head_en.html %}  
+
+    {% include js.html %}   
+  
+  <script src="../public/thickbox/js/thickbox.js" type="text/javascript"></script>                                                        
+  <link rel="stylesheet" href="../public/thickbox/css/thickbox.css" type="text/css">                                                                     
+</head>
+ 
+<body>
+  <div id="container">
+      <hr class="accessibility" />
+      <div id="pageHeader">
+        <h1><a href="/" title="русский"><span> <a href="http://spitz-vesgnom.ru/" title="Home Page, shortcut key=1" >Веселый Гном - питомник шпицев</a></span></a></h1>
+        <hr class="accessibility" />
+        <a id="en" href="/en/index.html" title="english"><span>English</span></a>
+        <a id="rus" href="/" title="русский"><span>Russian</span></a>
+      </div>
+      <div id="content"> 
+        <div id="shapka"><h2>{{ page.title }}</h2></div>
+        <div id="main">
+          {{ content }} 
+        </div>
+        <div id="footer">
+          <p>© 2005-2016 www.spitz-vesgnom.ru</p>
+        </div> 
+      </div> 
+        
+      {% include menu_en.html %}
+    </div>
+      {% include counters.html %}
+</body>
+</html>
